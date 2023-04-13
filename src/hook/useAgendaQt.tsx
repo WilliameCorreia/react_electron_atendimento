@@ -50,6 +50,7 @@ const useGetAgendaQt = () => {
 
         return resultByOrder;
     },{
+        staleTime: 60 * 30000,
         onError: () => {
             addAlert({
                 message: 'Não foi possivel adicionar o Paciente',

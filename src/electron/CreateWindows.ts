@@ -19,12 +19,11 @@ const createWindow = () => {
     resizable: true,
     fullscreenable: false,
     alwaysOnTop: true,
-    kiosk: false,
     roundedCorners: true,
-    skipTaskbar: true,
+    skipTaskbar: false,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
-      webSecurity: false
+      webSecurity: isDev ? false : true
     },
   });
 

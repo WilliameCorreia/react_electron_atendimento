@@ -7,14 +7,22 @@ import { WebpackPlugin } from '@electron-forge/plugin-webpack';
 
 import { mainConfig } from './webpack.main.config';
 import { rendererConfig } from './webpack.renderer.config';
-import path from "path";
 
 const config: ForgeConfig = {
   packagerConfig: {
-    icon: '/src/assets/img/20.png'
+    icon: './src/assets/icon/IconApp.icns',
+    name: 'Pronutrir Atendimento',
+    
   },
   rebuildConfig: {},
-  makers: [new MakerSquirrel({}), new MakerZIP({}, ['darwin']), new MakerRpm({}), new MakerDeb({})],
+  makers: [
+    new MakerSquirrel({
+      setupIcon: './src/assets/icon/1024.png'
+    }), 
+    new MakerZIP({}, ['darwin']), 
+    new MakerRpm({}), 
+    new MakerDeb({})
+  ],
   plugins: [
     new WebpackPlugin({
       mainConfig,

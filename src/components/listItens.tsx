@@ -6,19 +6,16 @@ import Typography from '@mui/material/Typography';
 import ListItemButton from '@mui/material/ListItemButton';
 import useGetAgendaQt, { IAgendaQT } from '../hook/useAgendaQt';
 import { Box, CircularProgress, Divider } from '@mui/material';
-/* import { ReactComponent as Logo } from "../assets/svg/historico.svg"; */
+import Logo from "../assets/svg/historico.svg";
 import moment from 'moment';
 import AlertDialogPerson, { ModalHandles } from './AlertDialogPerson';
 import { useSenhaAtendimento } from '../hook/useAtendimento';
 import { useAddSinaisVitaisAtendimento } from '../hook/useSinaisVitais';
 import SimpleBackdrop, { LoadHandles } from './backDrop';
-import NotificationGlobalContext from '../contexts/notificationContext';
 
 export default function VirtualizedList() {
 
   const { data, isLoading } = useGetAgendaQt();
-
-  const { addAlert } = React.useContext(NotificationGlobalContext);
 
   const AlertDialogPersonRef = React.useRef<ModalHandles>(null);
   const SimpleBackdropRef = React.useRef<LoadHandles>(null);
@@ -57,7 +54,7 @@ export default function VirtualizedList() {
         refModalAlert.current?.handleClickOpen(item.nM_PESSOA_FISICA);
       }}>
         <ListItemAvatar>
-          {/* <Logo /> */}
+          <Logo />
         </ListItemAvatar>
         <ListItemText
           primary={
