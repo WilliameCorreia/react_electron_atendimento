@@ -18,7 +18,7 @@ jobs:
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: pronutrirAtendimentoWin.zip
+        name: pronutrirAtendimentoMac.zip
         path: out/make/zip/darwin/x64/**.zip
 
   build_on_win:
