@@ -38,7 +38,7 @@ export default function CustomizedSnackbars() {
         <Stack spacing={2} sx={{ width: '100%' }}>
             <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }} open={open} autoHideDuration={3000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity={alert?.status} sx={{ width: '100%' }}>
-                    {alert ? alert.message : ' '}
+                    {alert ?alert.message : ' '}
                 </Alert>
             </Snackbar>
         </Stack>

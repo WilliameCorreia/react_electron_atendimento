@@ -43,6 +43,19 @@ const config: ForgeConfig = {
       },
     }),
   ],
+  publishers : [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'github.com/WilliameCorreia',
+          name: 'react_electron_atendimento',
+        },
+        prerelease: false,
+        draft: true,
+      },
+    },
+  ]
 };
 
 export default config;
