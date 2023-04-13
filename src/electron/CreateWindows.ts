@@ -21,8 +21,10 @@ const createWindow = () => {
     alwaysOnTop: true,
     kiosk: false,
     roundedCorners: true,
+    skipTaskbar: true,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
+      webSecurity: false
     },
   });
 

@@ -27,6 +27,6 @@ app.on('window-all-closed', () => {
   }
 });
 
-app.on('browser-window-created', () => {
+/* app.on('browser-window-created', () => {
   if (process.platform !== 'darwin')  app.dock.hide();
-})
+}) */

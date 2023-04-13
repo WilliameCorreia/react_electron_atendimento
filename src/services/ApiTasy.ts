@@ -18,8 +18,8 @@ interface TokenResponse {
 
 const ApiTasy = axios.create({
     //producao
-    //baseURL: 'https://servicesapppronutrir.com.br/apitasy/api/v1/',
-    baseURL: 'https://servicesapppronutrir.com.br/apitasytest/api/v1/',
+    baseURL: 'https://servicesapppronutrir.com.br/apitasy/api/v1/',
+    //baseURL: 'https://servicesapppronutrir.com.br/apitasytest/api/v1/',
     headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
