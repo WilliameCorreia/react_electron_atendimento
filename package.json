@@ -58,20 +58,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.9"
-  },
-  "config": {
-    "forge": {
-      "publishers": [
-        {
-          "name": "@electron-forge/publisher-github",
-          "config": {
-            "repository": {
-              "owner": "github.com/WilliameCorreia",
-              "name": "react_electron_atendimento"
-            }
-          }
-        }
-      ]
-    }
   }
 }
