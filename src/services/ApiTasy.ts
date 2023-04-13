@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
 import { InternalServerError } from "./ApiAtendimento";
-import refreshToken from "./refreshToken";
+/* import refreshToken from "./refreshToken"; */
 import ApiAuth from "./ApiAuth";
 
 interface TokenResponse {
@@ -18,8 +18,8 @@ interface TokenResponse {
 
 const ApiTasy = axios.create({
     //producao
-    baseURL: 'https://servicesapppronutrir.com.br/apitasy/api/v1/',
-    //baseURL: 'https://servicesapppronutrir.com.br/apitasytest/api/v1/',
+    //baseURL: 'https://servicesapppronutrir.com.br/apitasy/api/v1/',
+    baseURL: 'https://servicesapppronutrir.com.br/apitasytest/api/v1/',
     headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
