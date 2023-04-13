@@ -16,10 +16,10 @@ jobs:
     - name: build
       run: npm run make
     - name: Upload Artifact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
-        name: app-release.aab
-        path: out/make/zip/darwin/x64
+        name: pronutrirAtendimentoWin.zip
+        path: out/make/zip/darwin/x64/[abc].zip
 
   build_on_win:
     runs-on: windows-latest
@@ -33,7 +33,7 @@ jobs:
     - name: build
       run: npm run make
     - name: Upload Artifact
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
-        name: app-release.aab
-        path: out/make/
+        name: pronutrirAtendimentoWin.zip
+        path: out/make/[abc].zip
