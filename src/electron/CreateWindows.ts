@@ -20,7 +20,7 @@ const createWindow = () => {
     fullscreenable: false,
     alwaysOnTop: true,
     roundedCorners: true,
-    skipTaskbar: false,
+    skipTaskbar: true,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       webSecurity: isDev ? false : true

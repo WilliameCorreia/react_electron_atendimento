@@ -18,9 +18,9 @@ const config: ForgeConfig = {
   makers: [
     new MakerSquirrel({
       setupIcon: './src/assets/icon/IconApp.ico'
-    }), 
-    new MakerZIP({}, ['darwin']), 
-    new MakerRpm({}), 
+    }),
+    new MakerZIP({}, ['darwin']),
+    new MakerRpm({}),
     new MakerDeb({})
   ],
   plugins: [
