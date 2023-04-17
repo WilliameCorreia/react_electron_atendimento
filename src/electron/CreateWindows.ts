@@ -21,6 +21,7 @@ const createWindow = () => {
     alwaysOnTop: true,
     roundedCorners: true,
     skipTaskbar: true,
+    icon: '../assets/icon/IconApp.png',
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       webSecurity: isDev ? false : true
