@@ -11,13 +11,13 @@ import { rendererConfig } from './webpack.renderer.config';
 const config: ForgeConfig = {
   packagerConfig: {
     icon: './src/assets/icon',
-    name: 'Pronutrir Atendimento',
+    name: 'Pronutrir_Atendimento',
   },
   rebuildConfig: {},
   makers: [
     new MakerSquirrel({
       setupIcon: './src/assets/icon/IconApp.ico',
-      name: 'Pronutrir Atendimento',
+      name: 'Pronutrir_Atendimento',
     }),
     new MakerZIP({
       
