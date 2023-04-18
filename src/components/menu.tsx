@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material';
 import VirtualizedList from './listItens';
+import VirtaulizedListQuimio from './listItens_quimio';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -57,15 +58,15 @@ export default function BasicTabs(props: MenuProps) {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <TabButton  label="Agenda Quimioterapia" {...a11yProps(0)} />
-          <TabButton label="Agenda de consulta" {...a11yProps(1)} />
+          <TabButton  label="Pacientes com consulta e tratamento " {...a11yProps(0)} />
+          <TabButton label="Agenda de Quimioterapia" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         <VirtualizedList/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <VirtualizedList/>
+        <VirtaulizedListQuimio/>
       </TabPanel>
     </Box>
   );
